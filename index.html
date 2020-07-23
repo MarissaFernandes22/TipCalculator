@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tip.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1 id="header">Welcome to Marissa's exclusive tip calculator</h1>
+    <p id="info">Please tip your servers well. They work hard for your comfort.</p>
+    <div id="container">
+        <h1>
+            Tip Calculator
+        </h1>
+            <div id="calculator">
+                <form>
+                    <p>
+                        Enter Bill Amount $ <input type="text" id="billamt" placeholder="Bill Amount">
+                          <p>How was the service?</p>
+                     </p>
+                     <select name="service-selection" id="service-quality">
+                         <option disabled selected value=0>Choose and option</option>
+                        <option value="0.3">30% - Amazing Service</option>
+                        <option value="0.2">20% - Great</option>
+                        <option value="0.15">15% - Ok</option>
+                        <option value="0.1">10% - Bad</option>
+                        <option value="0.05">5% - Too Bad</option>
+                     </select>
+                </form>
+
+                <p id="quest">How many people?</p>
+                <input id="people-amt" type="text" placeholder="Number of People">
+            </div>
+            <!-- Total calculations -->
+
+        <div id="cal-button"><button type="button" id="calculate">Calculate</button></div>
+        <div id="totalTip">
+            $ <span id= "tip">
+                0.00
+            </span>
+            <small id="each">each</small>
+        </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="script.js">
+</script>
+</html>
